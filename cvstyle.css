@@ -1,0 +1,127 @@
+body{
+    text-align: center;
+}
+.main{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+}
+/***** menu ****/
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.nav>div>a>img,.nav>div>img{
+    width: 75px;
+    height: 75px;
+}
+.side{
+    background-image: url(./profile/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 44%;
+    height: 40rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem #335858;
+}
+.toolmenu,.menu{
+    display: flex;
+    flex-direction: column;
+}
+/***** end menu ****/
+.article{
+    display: flex;
+    flex-direction: column;
+}
+h1,p,h2{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: cursive;
+}
+p{
+    text-shadow: -3px -3px #ed08084d;
+}
+/**** skill ****/
+.b-flex,.b-strap,.b-css,.b-html,.b-script,.b-csharp{
+    background-color: darkcyan;
+}
+.i-flex,.i-strap,.i-css,.i-html,.i-script,.i-csharp{
+    background-color: yellowgreen;
+}
+.i-flex{
+    width: 90%;
+}
+.i-csharp{
+    width: 50%;
+}
+.i-html{
+    width: 90%;
+}
+.i-script{
+    width: 80%;
+}
+.i-css{
+    width: 80%;
+}
+.i-strap{
+    width: 40%;
+}
+.skill{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.boxs1,.boxs2{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 160%;
+    justify-content: space-between;
+    font-family: cursive;
+}
+.boxs1>div>div,.boxs2>div>div{
+    text-align: center;
+}
+/***** end skill ****/
+@media screen and (max-width:1300px) {
+    .main{
+        display: flex;
+        flex-direction: column ;
+        align-items: center;
+    }
+    /***menu***/
+    .nav{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .toolmenu{
+        flex-direction: row;
+        flex-grow: 1;
+        justify-content: space-evenly;
+    }
+    .nav>div>a>img,.nav>div>img{
+        width: 45px;
+        height: 45px;
+    }
+    /****end menu ***/
+    .side {
+        width: 19%;
+        height: 12rem;
+        border-radius: 5rem 5rem 5rem;
+    }
+}
+@media screen and (max-width:800px) {
+    .side{
+        width: 24%;
+        height: 11rem;
+        border-radius: 7rem 7rem 7rem;
+    }
+}
+@media screen and (max-width: 790px){
+    .side {
+        width: 27%;
+        height: 12rem;
+        border-radius: 7rem 7rem 7rem;
+    }
+}
